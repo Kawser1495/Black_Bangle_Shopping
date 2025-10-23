@@ -1,0 +1,14 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Dec 8, 2024, 10:47:08 AM
+    Author     : rifat
+*/
+
+.main{
+    -fx-font-color:red;
+    -fx-border-radius:5px;
+    -fx-background-color:purple;
+}

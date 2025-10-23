@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onMousePressed="#click" prefHeight="215.0" prefWidth="225.0" styleClass="shoe-item" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.shoeshopsystem.ItemController">
+    <stylesheets>
+        <URL value="@item.css" />
+    </stylesheets>
+   <children>
+      <Text fx:id="name_label" fill="#ffb200" layoutX="32.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apex">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="price_label" fill="#c63333" layoutX="167.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1200">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="img_view" fitHeight="133.0" fitWidth="146.0" layoutX="40.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/img/shoes.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="154.0" layoutY="18.0" text="\$">
+         <font>
+            <Font name="Verdana Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

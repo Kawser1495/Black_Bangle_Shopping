@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.shoeshopsystem.FrontPageController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="signBtn" layoutX="370.0" layoutY="368.0" mnemonicParsing="false" onAction="#signInPage" prefWidth="92.0" styleClass="sign-btn" stylesheets="@frontpage.css" text="Sign In" />
+            <Button fx:id="logBtn" layoutX="370.0" layoutY="311.0" mnemonicParsing="false" onAction="#logInPage" prefHeight="25.0" prefWidth="92.0" styleClass="login-btn" stylesheets="@frontpage.css" text="Login" />
+            <Button fx:id="adminBtn" layoutX="370.0" layoutY="262.0" mnemonicParsing="false" onAction="#ControlPanel" prefHeight="25.0" prefWidth="92.0" styleClass="admin" stylesheets="@frontpage.css" text="Control" />
+            <ImageView fitHeight="133.0" fitWidth="193.0" layoutX="316.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/rifat/OneDrive/Desktop/shoeShopSystem/src/main/java/img/Screenshot%202024-12-08%20122551.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="292.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online SHOP SYSTEM" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.511049723756906" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.75" green="0.2986111044883728" blue="0.2986111044883728" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.75" green="0.2986111044883728" blue="0.2986111044883728" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9078947305679321" green="0.8560550808906555" blue="0.2858187258243561" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

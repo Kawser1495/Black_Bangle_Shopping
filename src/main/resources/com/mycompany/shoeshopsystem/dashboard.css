@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.layout-button {
+    -fx-background-color:#ffa666;
+    -fx-border-color:none;
+    -fx-cursor:hand;
+    
+}
+.layout-bar{
+    -fx-background-color:#ffa666;
+}

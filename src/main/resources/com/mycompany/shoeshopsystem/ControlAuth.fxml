@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.shoeshopsystem.ControlAuthController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="228.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Control Authentication">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="admin_id" layoutX="265.0" layoutY="158.0" prefHeight="25.0" prefWidth="212.0" promptText="Admin ID No" />
+            <Label layoutX="265.0" layoutY="134.0" text="Admin ID No" />
+            <TextField fx:id="passkey" layoutX="265.0" layoutY="225.0" prefHeight="25.0" prefWidth="212.0" promptText="Pass Key" />
+            <Label layoutX="265.0" layoutY="201.0" text="Passkey" />
+            <Button fx:id="verify" layoutX="425.0" layoutY="288.0" mnemonicParsing="false" onAction="#verify" styleClass="buy-btn" stylesheets="@frontpage.css" text="VERIFY" />
+            <Button fx:id="backBtn" layoutX="33.0" layoutY="29.0" mnemonicParsing="false" onAction="#BackButton" styleClass="sign-btn" stylesheets="@frontpage.css" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

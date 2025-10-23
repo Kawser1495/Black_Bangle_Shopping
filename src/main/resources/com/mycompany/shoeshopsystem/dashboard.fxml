@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.shoeshopsystem.DashboardController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="350.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online SHOP SYSTEM" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.511049723756906" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.75" green="0.2986111044883728" blue="0.2986111044883728" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.75" green="0.2986111044883728" blue="0.2986111044883728" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9078947305679321" green="0.8560550808906555" blue="0.2858187258243561" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <ImageView fitHeight="54.0" fitWidth="79.0" layoutX="296.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Abir%20Hasan/Documents/NetBeansProjects/shoeShopSystem/src/main/java/img/shoes.png" />
+               </image>
+            </ImageView>
+            <Text fill="#795a07" layoutX="350.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fashion Unlimited">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutY="83.0" prefHeight="419.0" prefWidth="206.0" styleClass="layout-bar" stylesheets="@dashboard.css">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="121.0" layoutX="43.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/rifat/OneDrive/Desktop/shoeShopSystem/src/main/java/img/user.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="userShowName" layoutX="50.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abir Hasan" textAlignment="CENTER">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="103.0" layoutY="172.0" startX="-100.0" stroke="#d70d0d" />
+                  <Button fx:id="home_btn" layoutX="3.0" layoutY="191.0" mnemonicParsing="false" onAction="#switchPanel" prefHeight="43.0" prefWidth="201.0" styleClass="layout-button" stylesheets="@dashboard.css" text="HOME" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cart_btn" layoutX="3.0" layoutY="243.0" mnemonicParsing="false" onAction="#switchPanel" prefHeight="43.0" prefWidth="201.0" styleClass="layout-button" stylesheets="@dashboard.css" text="CART" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logout" layoutX="3.0" layoutY="378.0" mnemonicParsing="false" onAction="#logout" prefHeight="34.0" prefWidth="201.0" styleClass="layout-button" stylesheets="@dashboard.css" text="LOGOUT" textFill="#f50000">
+                     <font>
+                        <Font name="Verdana Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="44.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/rifat/OneDrive/Desktop/shoeShopSystem/src/main/java/img/home-button.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="43.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/rifat/OneDrive/Desktop/shoeShopSystem/src/main/java/img/carts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="38.0" layoutX="43.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/rifat/OneDrive/Desktop/shoeShopSystem/src/main/java/img/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="count_cart" layoutX="129.0" layoutY="257.0" text="2" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="home_anchor" layoutX="206.0" layoutY="83.0" prefHeight="419.0" prefWidth="593.0">
+               <children>
+                  <TextField fx:id="search_area" layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="559.0" promptText="Search Shoe's" />
+                  <HBox layoutX="12.0" layoutY="50.0" prefHeight="366.0" prefWidth="567.0">
+                     <children>
+                        <ScrollPane fx:id="scrollpan" prefHeight="366.0" prefWidth="568.0">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="12.0" prefWidth="5.0">
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="product_detail_anchor" layoutX="206.0" layoutY="83.0" prefHeight="419.0" prefWidth="593.0" visible="false">
+               <children>
+                  <ImageView fx:id="shoe_img_view" fitHeight="117.0" fitWidth="111.0" layoutX="19.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Abir%20Hasan/Documents/NetBeansProjects/shoeShopSystem/src/main/java/img/shoes.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="shoes_name_label" layoutX="176.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shoes Name">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="shoe_cart_btn" layoutX="175.0" layoutY="69.0" mnemonicParsing="false" onAction="#AddCart" prefHeight="24.0" prefWidth="99.0" styleClass="buy-btn" stylesheets="@frontpage.css" text="Add Cart" />
+                  <Label layoutX="39.0" layoutY="174.0" text="Model" />
+                  <Label layoutX="39.0" layoutY="233.0" text="Brand" />
+                  <Label layoutX="39.0" layoutY="295.0" text="Category" />
+                  <Label layoutX="154.0" layoutY="174.0" text="Size" />
+                  <Label layoutX="155.0" layoutY="233.0" text="Color" />
+                  <Label layoutX="153.0" layoutY="295.0" text="Status" />
+                  <Text fx:id="shoe_price_label" fill="#258026" layoutX="223.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1200">
+                     <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="183.0" layoutY="118.0" text="Taka" textFill="#0099ff">
+                     <font>
+                        <Font name="System Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="shoe_model" fill="#d3a3a3" layoutX="35.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AX328">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="shoe_size" fill="#d3a3a3" layoutX="143.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AX328">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="shoe_brand" fill="#d3a3a3" layoutX="35.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AX328">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="shoe_color" fill="#d3a3a3" layoutX="148.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AX328">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="shoe_status" fill="#d3a3a3" layoutX="148.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AX328">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="shoe_category" fill="#d3a3a3" layoutX="41.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AX328">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Line endX="-100.0" endY="270.0" layoutX="387.0" layoutY="135.0" startX="-100.0" startY="-122.0" stroke="#c9c5c5" strokeLineCap="ROUND" strokeWidth="0.5" />
+                  <Text layoutX="407.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Review">
+                     <font>
+                        <Font name="Verdana Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="43.0" fitWidth="73.0" layoutX="349.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Abir%20Hasan/Documents/NetBeansProjects/shoeShopSystem/src/main/java/img/star-rating.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="73.0" layoutX="499.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Abir%20Hasan/Documents/NetBeansProjects/shoeShopSystem/src/main/java/img/star-rating.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="315.0" layoutY="69.0" text="Give a Feedback" />
+                  <TextArea fx:id="feedback_box" layoutX="315.0" layoutY="95.0" prefHeight="67.0" prefWidth="270.0" promptText="Write Here" />
+                  <Button fx:id="feedback_send" layoutX="533.0" layoutY="65.0" mnemonicParsing="false" onAction="#AddReview" styleClass="sign-btn" stylesheets="@frontpage.css" text="SEND" />
+                  <TableView fx:id="feedback_table" layoutX="315.0" layoutY="174.0" prefHeight="236.0" prefWidth="270.0">
+                    <columns>
+                      <TableColumn fx:id="feedback_name" prefWidth="78.0" text="Name" />
+                      <TableColumn fx:id="feedback_comment" prefWidth="191.0" text="Comment" />
+                    </columns>
+                  </TableView>
+                  <Label fx:id="id_label" layoutX="116.0" layoutY="359.0" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="cart_anchor" layoutX="206.0" layoutY="83.0" prefHeight="419.0" prefWidth="593.0" visible="false">
+               <children>
+                  <Text fill="#aba965" layoutX="31.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cart List">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="cart_table_view" layoutX="31.0" layoutY="60.0" onMouseClicked="#mouseClicked" prefHeight="221.0" prefWidth="448.0">
+                    <columns>
+                      <TableColumn fx:id="name_col" prefWidth="98.0" text="Shoe Name" />
+                        <TableColumn fx:id="model_col" prefWidth="83.0" text="Model" />
+                        <TableColumn fx:id="color_col" prefWidth="69.0" text="Color" />
+                        <TableColumn fx:id="size_col" prefWidth="89.0" text="Size" />
+                        <TableColumn fx:id="price_col" prefWidth="115.0" text="Price" />
+                    </columns>
+                  </TableView>
+                  <Text layoutX="220.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="del_item_show" editable="false" layoutX="255.0" layoutY="25.0" />
+                  <Button layoutX="420.0" layoutY="25.0" mnemonicParsing="false" onAction="#deleteCart" styleClass="buy-btn" stylesheets="@frontpage.css" text="Remove" />
+                  <Text fx:id="bill_label" fill="RED" layoutX="253.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5000" wrappingWidth="46.0">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="34.0" fitWidth="29.0" layoutX="184.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Abir%20Hasan/Documents/NetBeansProjects/shoeShopSystem/src/main/java/img/bill.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="cashOnDev" layoutX="142.0" layoutY="353.0" mnemonicParsing="false" onAction="#CashOnDelivery" styleClass="login-btn" stylesheets="@frontpage.css" text="Cash on Delivery" />
+                  <Button fx:id="OnlinePayment" layoutX="264.0" layoutY="353.0" mnemonicParsing="false" onAction="#OnlinePayment" styleClass="sign-btn" stylesheets="@frontpage.css" text="Online Payment" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

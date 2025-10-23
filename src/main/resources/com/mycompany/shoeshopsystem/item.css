@@ -1,0 +1,8 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.shoe-item {
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 30;
+}

@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.login-btn {
+    -fx-background-color:#0D6EFD;
+    -fx-backgroud-radius:5px;
+    -fx-text-fill:white;
+    -fx-cursor:hand;
+}
+.sign-btn{
+    -fx-background-color:#198754;
+    -fx-backgroud-radius:5px;
+    -fx-text-fill:white;
+    -fx-cursor:hand;
+}
+.search-box{
+     -fx-backgroud-radius:0px;
+     -fx-border-color:yellow;
+}
+.buy-btn{
+     -fx-background-color:#DC3545;
+     -fx-backgroud-radius:5px;
+     -fx-text-fill:white;
+     -fx-cursor:hand;
+}
+.dashboard-panel{
+     -fx-background-color:#F8F9FA;
+}
+.admin{
+    -fx-background-color:#FFC107;
+    -fx-text-fill:white;
+    -fx-cursor:hand;
+}
